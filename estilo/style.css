@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+:root {
+    --cor00: #F29BE4;
+    --cor01: #FF548E;
+    --cor02: #E423AE;
+    --cor03: #CB0FA7;
+    --cor04: #881FC7;
+    --cor05: #4C0D91;
+    --cor06: #280973;
+    --cor07: #FFB80F;
+
+    --font01: 'Pacifico', cursive;
+    --font02: 'Kalam', cursive;
+    --font03: 'Great Vibes', cursive;
+    --font04: 'Handlee', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+header {
+    background-image: linear-gradient(to top, var(--cor02), var(--cor04), var(--cor06));
+    color: white;
+    padding-bottom: 7px;
+    
+}
+
+header h1 {
+    font-family: var(--font02);
+    font-weight: bold;
+    font-size: 2.2em;
+    padding: 2vh;
+    text-align: center;
+    color: var(--cor07);
+    text-shadow: 2px 2px 5px #0000007d;
+}
+
+header h1 span {
+    display: inline-block;
+    font-family: var(--font01);
+    font-weight: normal;
+    font-size: 1.3em;
+    background-image: linear-gradient(to bottom, var(--cor01), var(--cor02), var(--cor04));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 1px 1px 1px var(--cor00);
+}
+nav {
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    font-family: var(--font02);
+    background-color: var(--cor00);
+    border: 2px solid var(--cor06);
+    padding: 5px;
+    margin: 10px;
+    min-width: 100px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+a:active {
+    background-color: var(--cor01);
+    color: #17063f;
+}
+
+
+.conteiner {
+    position: relative;
+    padding: 55.25% 0 0 0;
+    min-height: 39.56vh;
+}
+
+.conteiner iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+main {
+    background-color: var(--cor06);
+    box-shadow: inset 0px 10px 10px rgba(0, 0, 0, 0.187);
+}
+
+main h1 {
+    font-family: var(--font03);
+    font-size: 2.3em;
+    color: var(--cor00);
+    text-shadow: 2px 2px #0000006d;
+    padding: 30px;
+}
+
+main p {
+    display: inline-block;
+    max-width: 600px;
+    font-family: var(--font04);
+    font-size: 1.1em;
+    color: white;
+    padding: 0 30px;
+    line-height: 2em;
+}
+
+main .right {
+    margin-top: 70px;
+    display: flex;
+    justify-content: right;
+    padding-bottom: 30px;
+}
+
+footer {
+    background-color: black;
+    padding: 5px;
+    max-height: 20px;
+    color: white;
+    text-align: center;
+}
+
+.movimenta-direita {
+    position: relative;
+    left: -100%;
+    animation-name: direita;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes direita {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 0%;
+    }
+}
+
+.movimenta-esquerda {
+    position: relative;
+    left: 100%;
+    animation-name: esquerda;
+    animation-duration: 6s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes esquerda {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: 0%;
+    }
+}

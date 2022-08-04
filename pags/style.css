@@ -1,0 +1,39 @@
+:root {
+    --cor00: #F29BE4;
+    --cor01: #FF548E;
+    --cor02: #E423AE;
+    --cor03: #CB0FA7;
+    --cor04: #881FC7;
+    --cor05: #4C0D91;
+    --cor06: #280973;
+    --cor07: #FFB80F;
+
+    --font01: 'Pacifico', cursive;
+    --font02: 'Kalam', cursive;
+    --font03: 'Great Vibes', cursive;
+    --font04: 'Handlee', cursive;
+}
+
+body {
+    background-color: var(--cor06);
+}
+
+section {
+    min-width: 50px;
+    max-width: 700px;
+    margin: auto;
+}
+
+div.video {
+    padding-bottom: 56.5%;
+    position: relative;
+}
+
+div.video > iframe {
+    border-radius: 5px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
