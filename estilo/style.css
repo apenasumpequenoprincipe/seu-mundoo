@@ -71,6 +71,7 @@ nav a {
     border: 2px solid var(--cor06);
     padding: 5px;
     margin: 10px;
+    color: var(--cor05);
     min-width: 100px;
     border-radius: 5px;
     font-weight: bold;
