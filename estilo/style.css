@@ -138,6 +138,7 @@ main .right {
 }
 
 footer {
+    font-size: 0.8em;
     background-color: black;
     padding: 5px;
     max-height: 20px;
