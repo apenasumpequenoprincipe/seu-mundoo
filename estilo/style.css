@@ -111,7 +111,7 @@ main h1 {
     padding: 30px;
 }
 
-main p, main p q {
+main p {
     display: inline-block;
     max-width: 600px;
     font-family: var(--font04);
@@ -120,6 +120,14 @@ main p, main p q {
     padding: 0 30px;
     line-height: 2em;
 }
+
+main p q {
+    font-family: var(--font04);
+    font-size: 1.1em;
+    color: white;
+    line-height: 2em;
+}
+
 
 main .right {
     margin-top: 70px;
